@@ -1,0 +1,147 @@
+@import url('reset.css');
+@import url('global.css');
+
+body {
+    background-color: var(--dark-blue);
+}
+
+/* Left Container */
+.container {
+    position: relative;
+    display: flex;
+    height: 100vh;
+}
+
+.container__left {
+    border: .09rem solid white;
+
+    width: 25%;
+    display: flex;
+    min-width: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.score {
+    width: 60%;
+    height: 10%;
+    border: .15rem solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar {
+    border: .09rem solid white;
+    height: 30%;
+}
+
+.avatar img {
+    height: 100%;
+}
+
+.card-details {
+    border: .15rem solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 10%;
+    width: 60%;
+}
+
+.card-details__name {
+    font-size: 1rem;
+}
+
+.card-details__type {
+    font-size: .9rem;
+}
+
+/* Rigth Container */
+.container__right {
+    border: .09rem solid white;
+
+    width: 75%;
+    height: 100%;
+}
+
+.playmat {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-box {
+    border: .1rem solid lightblue;
+
+    height: 20%;
+    width: 80%;
+    margin: 5vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card-box__card {
+    border: .1rem solid white;
+
+    height: 80%;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+}
+
+.card-box__card-pokemon {
+    height: 80%;
+}
+
+/* Active Cards */
+.active-cards {
+    width: 50%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.active-cards__left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2vw;
+}
+
+.active-cards__right {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2vw;
+}
+
+.active-cards__line {
+    border-right: .01rem solid white;
+    height: 100%;
+    opacity: .7;
+}
+
+.card {
+    border: .1rem solid white;
+    border-radius: .5rem;
+    height: 70%;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__image {
+    height: 85%;
+}

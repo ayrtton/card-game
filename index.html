@@ -3,9 +3,82 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Pokémon Game</title>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="shortcut icon" href="assets/icons/pokeball.png" type="image/x-icon">
     </head>
     <body>
-        
+        <div class="container">
+            <div class="container__left">
+                <div class="score">
+                    <span class="score__points">Win: 0 | Lose: 0</span>
+                </div>
+                <div class="avatar">
+                    <img src="assets/images/zapdos.png" alt="" class="avatar__image">
+                </div>
+                <div class="card-details">
+                    <p class="card-details__name">Zapdos</p>
+                    <p class="card-details__type">Electric</p>
+                </div>
+            </div>
+            <div class="container__right">
+                <div class="playmat">
+                    <div class="card-box player-02">
+                        <div class="card-box__card">
+                            <img class="card-box__card-pokemon" src="assets/images/blastoise.png" alt="">
+                        </div>
+                        <div class="card-box__card">
+                            <img class="card-box__card-pokemon" src="assets/images/charizard.png" alt="">
+                        </div>
+                        <div class="card-box__card">
+                            <img class="card-box__card-pokemon" src="assets/images/gyarados.png" alt="">
+                        </div>
+                        <div class="card-box__card">
+                            <img class="card-box__card-pokemon" src="assets/images/ninetales.png" alt="">
+                        </div>
+                        <div class="card-box__card">
+                            <img class="card-box__card-pokemon" src="assets/images/jolteon.png" alt="">
+                        </div>
+                        <div class="card-box__card">
+                            <img class="card-box__card-pokemon" src="assets/images/zapdos.png" alt="">
+                        </div>
+                    </div>
+                    <div class="active-cards">
+                        <div class="active-cards__left">
+                            <div class="card">
+                                <img class="card__image" src="assets/images/blastoise.png" alt="">
+                            </div>
+                        </div>
+                        <div class="active-cards__line"></div>
+                        <div class="active-cards__right">
+                            <div class="card">
+                                <img class="card__image" src="assets/images/ninetales.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-box player-01">
+                        <div class="card-box__card">
+                            <img class="card-box__card-pokemon" src="assets/images/blastoise.png" alt="">
+                        </div>
+                        <div class="card-box__card">
+                            <img class="card-box__card-pokemon" src="assets/images/charizard.png" alt="">
+                        </div>
+                        <div class="card-box__card">
+                            <img class="card-box__card-pokemon" src="assets/images/gyarados.png" alt="">
+                        </div>
+                        <div class="card-box__card">
+                            <img class="card-box__card-pokemon" src="assets/images/ninetales.png" alt="">
+                        </div>
+                        <div class="card-box__card">
+                            <img class="card-box__card-pokemon" src="assets/images/jolteon.png" alt="">
+                        </div>
+                        <div class="card-box__card">
+                            <img class="card-box__card-pokemon" src="assets/images/zapdos.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/engine.js" defer></script>
     </body>
 </html>

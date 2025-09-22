@@ -1,0 +1,11 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	vertical-align: baseline;
+	list-style: none;
+	color: #FFF;
+	font-family: "Poppins", sans-serif;
+	text-decoration: none;
+	box-sizing: border-box;
+}
