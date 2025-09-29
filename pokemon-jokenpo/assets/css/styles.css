@@ -33,11 +33,10 @@ body {
 }
 
 .avatar {
-    border: .09rem solid white;
     height: 30%;
 }
 
-.avatar img {
+.card-details__image {
     height: 100%;
 }
 
@@ -80,25 +79,40 @@ body {
 
     height: 20%;
     width: 80%;
-    margin: 5vh 0;
+    margin: 4vh 0;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
+.card-back {
+    display: block;
+    /*display: none;*/
+}
+
+.card-front {
+    display: none;
+    /*display: block;*/
+}
+
 .card-box__card {
     border: .1rem solid white;
 
-    height: 80%;
+    height: 85%;
     aspect-ratio: 1/1;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: .5rem;
+    transition: transform .7s;
+}
+
+.card-box__card:hover {
+    transform: scale(1.1);
 }
 
 .card-box__card-pokemon {
-    height: 80%;
+    height: 70%;
 }
 
 /* Active Cards */
@@ -110,15 +124,7 @@ body {
     justify-content: space-between;
 }
 
-.active-cards__left {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 2vw;
-}
-
-.active-cards__right {
+.active-cards__field {
     height: 100%;
     display: flex;
     align-items: center;
@@ -143,5 +149,5 @@ body {
 }
 
 .card__image {
-    height: 85%;
+    height: 80%;
 }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokémon Jokenpo</title>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="shortcut icon" href="assets/icons/pokeball.png" type="image/x-icon">
+    </head>
+    <body>
+        <div class="container">
+            <div class="container__left">
+                <div class="score">
+                    <span class="score__points" id="score__points">Win: 0 | Lose: 0</span>
+                </div>
+                <div class="avatar">
+                    <img src="" alt="" class="card-details__image" id="card-details__image">
+                </div>
+                <div class="card-details">
+                    <p class="card-details__name" id="card-details__name">Select a Card</p>
+                    <p class="card-details__type" id="card-details__type"></p>
+                </div>
+            </div>
+            <div class="container__right">
+                <div class="playmat">
+                    <div class="card-box" id="player-02-cards">
+                    </div>
+                    <div class="active-cards">
+                        <div class="active-cards__field">
+                            <div class="card">
+                                <img class="card__image" id="player-01-active-card" src="" alt="">
+                            </div>
+                        </div>
+                        <div class="active-cards__line"></div>
+                        <div class="active-cards__field">
+                            <div class="card">
+                                <img class="card__image" id="player-02-active-card" src="" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-box" id="player-01-cards">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/engine.js" defer></script>
+    </body>
+</html>
